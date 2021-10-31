@@ -1,0 +1,196 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+    font-family: sans-serif;
+}
+
+.top-bg {
+    background: hsl(225, 100%, 98%);
+    padding: 20px 0 50px 0;
+    height: 200px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.header h2 {
+    font-size: 22px;
+    word-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: hsl(228, 12%, 44%);
+}
+
+.toggle {
+    display: flex;
+    cursor: pointer;
+}
+#light {
+    display: none;
+}
+.toggle p {
+    margin-right: 5px;
+    color: hsl(228, 12%, 44%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Card Section */
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: hsl(227, 47%, 96%);
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.box:hover{
+    background: hsl(230, 22%, 74%);
+}
+.box1 {
+    border-top: 5px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
+}
+.box2 {
+    border-top: 5px solid hsl(203, 89%, 53%);
+    border-radius: 5px;
+}
+.box3 {
+    border-top: 5px solid hsl(329, 70%, 58%);
+    border-radius: 5px;
+}
+.box4 {
+    border-top: 5px solid hsl(348, 97%, 39%);
+    border-radius: 5px;
+}
+
+.box div {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.box div img {
+    margin-right: 10px;   }
+.box div p {
+    font-size: 14px;
+    font-weight: 700;
+}
+.count {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 5px auto 0 auto;
+    color: hsl(230, 17%, 14%);
+}
+
+.followers {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(228, 12%, 44%);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+} 
+.box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.box span img {
+    margin-right: 5px;
+}
+
+.overview {
+    margin: 30px 0;
+}
+
+.overview h2 {
+    font-size: 20px;
+    color: hsl(228, 12%, 44%);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.sbox {
+    background: hsl(227, 47%, 96%);
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sbox:hover {
+    background: hsl(230, 22%, 74%);
+}
+.sbox div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.num {
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(230, 17%, 14%);
+}
+
+.sub-sec span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 662px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+    article {
+        /* margin: 20px auto; */
+        justify-content: center;
+        align-items: center;
+    }
+    .sbox, .box {
+        margin: 20px auto;
+    }
+}
